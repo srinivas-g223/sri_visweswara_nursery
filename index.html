@@ -141,18 +141,18 @@ footer{background:var(--em2);color:#bcd3c5;padding:60px 0 28px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero .eye,.hero p,.cta,.stats{opacity:1;transform:none}.hero h1 span i{transform:none}}
 </style></head><body>
 <div id="bar"></div>
-<header><div class="w nav"><a class="logo" href="#home"><img src="assets/logo.png" alt="Sri Visweswara Nursery"></a>
+<header><div class="w nav"><a class="logo" href="#home"><img src="/assets/logo.png" alt="Sri Visweswara Nursery"></a>
 <nav><button class="burger" aria-label="Menu">☰</button><ul>
 <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#plants">Plants</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 <a class="btn b1 nb" href="tel:+919440340141">📞 Call Now</a></div></header>
 
 <section class="hero" id="home"><h1 id="h1" class="sr-only">Greener Spaces, Happier Lives</h1>
-<div class="hero-art"><picture><source media="(max-width:1000px)" srcset="assets/home_banner_mobile.png"><img class="hero-banner" src="assets/home_banner.png" alt="Sri Visweswara Nursery — Greener Spaces, Happier Lives. Quality plants for a greener tomorrow." fetchpriority="high"></picture><a class="hero-explore" href="#plants" aria-label="Explore our plants"><span class="sr-only">Explore Our Plants</span></a></div>
+<div class="hero-art"><picture><source media="(max-width:1000px)" srcset="/assets/home_banner_mobile.png"><img class="hero-banner" src="/assets/home_banner.png" alt="Sri Visweswara Nursery — Greener Spaces, Happier Lives. Quality plants for a greener tomorrow." fetchpriority="high"></picture><a class="hero-explore" href="#plants" aria-label="Explore our plants"><span class="sr-only">Explore Our Plants</span></a></div>
 </section>
 <div class="mq"><div id="mq"></div></div>
 
 <section class="ab" id="about"><div class="w">
-<div class="fr rv"><img src="assets/about_nursery.jpg" alt="Colorful flowering and foliage plants arranged in the nursery" loading="lazy"></div>
+<div class="fr rv"><img src="/assets/about_nursery.jpg" alt="Colorful flowering and foliage plants arranged in the nursery" loading="lazy"></div>
 <div class="rv"><span class="eye">About Sri Visweswara Nursery</span><h2>Healthy plants from the heart of Kadiam’s nursery belt.</h2>
 <p>We are a trusted nursery in Kadiyapulanka, part of the Kadiam area near Rajahmundry, a region well known across India for its nurseries and flower festivals. We serve Kadiam and East Godavari with healthy plants, a wide variety, gardening solutions and landscaping support, with service that starts with listening.</p>
 <p>We grow and supply flowering, ornamental, indoor, outdoor and fruit plants, along with palms, hedges and landscaping stock. Whether you want one money plant for your desk or plants for a whole compound, we help you choose what will actually grow well in your space.</p>
@@ -190,7 +190,7 @@ footer{background:var(--em2);color:#bcd3c5;padding:60px 0 28px}
 <form class="rv" id="f"><label>Name<input name="n" required></label><label>Phone<input name="p" type="tel" required></label><label>Message<textarea name="m" required></textarea></label><button class="btn b1" type="submit" style="justify-content:center">Send Enquiry</button><small>Opens WhatsApp with your message. No data is stored.</small></form>
 </div></section>
 
-<footer><div class="w"><div class="fg"><div><img src="assets/logo.png" alt="Sri Visweswara Nursery"><p>Growing Green. Growing Beautiful.</p></div>
+<footer><div class="w"><div class="fg"><div><img src="/assets/logo.png" alt="Sri Visweswara Nursery"><p>Growing Green. Growing Beautiful.</p></div>
 <div><h3>Quick links</h3><a href="#home">Home</a><a href="#about">About</a><a href="#plants">Plants</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
 <div><h3>Contact</h3><p style="margin-top:0">Nursery Association Office Road, Kadiyapulanka, Kadiam, Andhra Pradesh – 533126</p><p><a href="tel:+919440340141">094403 40141</a>Open 24 Hours</p></div></div>
 <div class="cp"><span>© 2026 Sri Visweswara Nursery. All rights reserved.</span><span>Kadiyapulanka · Kadiam · East Godavari</span></div></div></footer>
@@ -205,9 +205,9 @@ const cats=['All',...new Set(P.map(p=>p[1]))];
 /* render */
 $('#mq').innerHTML=[...P,...P].map(p=>p[0]+' <b>✿</b>').join(' ');
 $('#fl').innerHTML=cats.map((c,i)=>`<button class="${i?'':'on'}" data-c="${c}">${c==='All'?c:c+' Plants'}</button>`).join('');
-$('#pg').innerHTML=P.map(p=>`<article class="pc rv" data-c="${p[1]}" data-n="${p[0].toLowerCase()}"><div class="im"><img src="assets/${p[3]||'p_'+p[2]+'.jpg'}" alt="${p[0]}" loading="lazy"></div><div class="t"><small>${p[1]} Plants</small><h3>${p[0]}</h3><p>Ask us about available varieties, sizes, pricing and current stock.</p><a class="btn b1" target="_blank" rel="noopener" href="${wa('Hello, I would like to enquire about '+p[0])}">Enquire Now</a></div></article>`).join('');
-$('#sg').innerHTML=S.map((s,i)=>`<article class="sc2 rv"><span class="n">${i+1}</span><div class="im"><img src="assets/${s[2]}.jpg" alt="${s[0]}" loading="lazy"></div><div class="t"><h3>${s[0]}</h3><p>${s[1]}</p><a target="_blank" rel="noopener" href="${wa('Hello, I would like to enquire about '+s[0])}">Enquire →</a></div></article>`).join('');
-$('#gl').innerHTML=Array.from({length:12},(_,i)=>`<img class="rv" src="assets/g${i+1}.jpg" alt="Nursery photo ${i+1}" loading="lazy">`).join('');
+$('#pg').innerHTML=P.map(p=>`<article class="pc rv" data-c="${p[1]}" data-n="${p[0].toLowerCase()}"><div class="im"><img src="/assets/${p[3]||'p_'+p[2]+'.jpg'}" alt="${p[0]}" loading="lazy"></div><div class="t"><small>${p[1]} Plants</small><h3>${p[0]}</h3><p>Ask us about available varieties, sizes, pricing and current stock.</p><a class="btn b1" target="_blank" rel="noopener" href="${wa('Hello, I would like to enquire about '+p[0])}">Enquire Now</a></div></article>`).join('');
+$('#sg').innerHTML=S.map((s,i)=>`<article class="sc2 rv"><span class="n">${i+1}</span><div class="im"><img src="/assets/${s[2]}.jpg" alt="${s[0]}" loading="lazy"></div><div class="t"><h3>${s[0]}</h3><p>${s[1]}</p><a target="_blank" rel="noopener" href="${wa('Hello, I would like to enquire about '+s[0])}">Enquire →</a></div></article>`).join('');
+$('#gl').innerHTML=Array.from({length:12},(_,i)=>`<img class="rv" src="/assets/g${i+1}.jpg" alt="Nursery photo ${i+1}" loading="lazy">`).join('');
 const gallery=$('#gl'),galleryPrev=$('#gallery-prev'),galleryNext=$('#gallery-next'),galleryCount=$('#gallery-count');
 const updateGallery=()=>{const step=gallery.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(gallery).columnGap);const index=Math.round(gallery.scrollLeft/step);galleryCount.value=`${Math.min(index+1,gallery.children.length)} / ${gallery.children.length}`;galleryPrev.disabled=gallery.scrollLeft<=1;galleryNext.disabled=gallery.scrollLeft+gallery.clientWidth>=gallery.scrollWidth-1};
 const moveGallery=direction=>{const step=gallery.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(gallery).columnGap);gallery.scrollBy({left:direction*step,behavior:'smooth'})};

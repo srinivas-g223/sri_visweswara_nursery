@@ -1,8 +1,8 @@
 Sri Visweswara Nursery - single page website
 
-Run locally:  npm install  then  npm run dev
-No npm?  Double-click index.html
-Deploy: upload index.html and the assets folder to any static host.
+Run locally: npm install, then npm run dev
+Build for deployment: npm run build (output: dist)
+Image files are stored in public/assets and included in the production build.
 
 Image credits
 The following product photos are Wikimedia Commons thumbnails, resized for this site:
